@@ -1,0 +1,7 @@
+{
+  "name": "weather-info",
+  "description": "A powercord plugin to quickly get info about the weather in a place.",
+  "author": "lxi",
+  "version": "1.0.0",
+  "license": "OSL-3.0"
+}
