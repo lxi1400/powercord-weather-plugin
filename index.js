@@ -8,7 +8,7 @@ module.exports = class Weather extends Plugin {
 
   async startPlugin() {
 
-    powercord.api.settings.registerSettings('weather', {
+    powercord.api.settings.registerSettings('weather_settings', {
       category: this.entityID,
       label: 'Weather',
       render: Settings
@@ -87,7 +87,7 @@ module.exports = class Weather extends Plugin {
         } catch (e){
           return {
             send: false,
-            result: `There was an error looking up ${args.join('-')}, did you enter a api-key in settings? ${e}`,
+            result: `There was an error looking up ${args.join(' ')}, did you enter a api-key in settings? `,
           };
         }
       },
